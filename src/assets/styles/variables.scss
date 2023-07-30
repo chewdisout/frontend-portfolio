@@ -1,0 +1,31 @@
+:root 
+{
+    --main-background-color: #121212;
+    --main-border-color: #383838;
+    --main-block-background-color: #1e1e1f;
+    --main-text-background-color: #2b2b2c;
+    --main-icon-color: #ffdb70;
+
+    --main-text-color: #fafafa;
+    --text-content-color: #d6d6d6;
+    --small-title-color: rgb(214 214 214 / 70%);
+
+    --divide-line-color: linear-gradient(
+        to right, 
+        hsl(45, 100%, 72%), 
+        hsl(35, 100%, 68%)
+      );
+
+    --fs-12: 12px;
+    --fs-14: 14px;
+    --fs-15: 15px;
+    --fs-18: 18px;
+    --fs-24: 24px;
+    --fs-26: 26px;
+    --fs-32: 32px;
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+}

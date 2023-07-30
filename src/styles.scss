@@ -1,5 +1,33 @@
+@import "./assets/styles/variables.scss";
+
+@font-face {
+    font-family: Poppins-regular;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
 * {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins-regular', sans-serif;
+    color: var(--main-text-color);
+}
+
+.icon-small-svg {
+    fill: none;
+    color: var(--main-icon-color);
+    stroke: var(--main-icon-color);
+    visibility: visible;
+    
+    rect {
+        stroke-width: 35px;
+    }
+
+    path {
+        stroke-width: 35px;
+    }
+    
+    circle {
+        stroke-width: 35px;
+    }
 }

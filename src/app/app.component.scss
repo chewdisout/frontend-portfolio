@@ -1,0 +1,126 @@
+.app {
+    &-background {
+        background: var(--main-background-color);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 1400px;
+        gap: 25px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    &-card {
+        border: 1px solid var(--main-border-color);
+        min-width: 275px;
+        background: var(--main-block-background-color);
+        border-radius: 20px;
+        box-shadow: 0 24px 80px, rgb(0 0 0 / 25%);
+        padding-top: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+
+        &-personal-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        &-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            overflow: hidden;
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        &-name {
+            font-size: var(--fs-26);
+            font-weight: var(--fw-500);
+        }
+
+        &-position {
+            padding-top: 5px;
+            padding-left: 18px;
+            padding-right: 18px;
+            padding-bottom: 5px;
+            font-size: var(--fs-12);
+            background: var(--main-text-background-color);
+            font-weight: var(--fw-300);
+            border-radius: 8px;
+        }
+
+        &-contact-info {
+            border-top: 2px solid var(--main-border-color);
+            padding-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .icon-small {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;
+                border-radius: 12px;
+                font-size: 18px;
+                background: linear-gradient(
+                    to bottom right, 
+                    hsl(0, 0%, 25%) 0%, 
+                    hsla(0, 0%, 25%, 0) 50%
+                  );
+
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+
+        &-email, &-phone, &-address {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &-email-title, &-phone-title, &-address-title {
+            color: var(--small-title-color);
+            font-size: var(--fs-12);
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+
+        &-email-text, &-phone-text, &-address-text {
+            font-size: var(--fs-14);
+            font-weight: var(--fw-300);
+        }
+
+        &-contact-container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &-info {
+        border: 1px solid var(--main-border-color);
+        border-radius: 20px;
+        background: var(--main-block-background-color);
+        box-shadow: 0 24px 80px, rgb(0 0 0 / 25%);
+        padding: 30px;
+    }
+}

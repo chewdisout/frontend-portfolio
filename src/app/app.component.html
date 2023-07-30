@@ -1,1 +1,46 @@
-<app-navbar></app-navbar>
+<div class="app-background">
+  <div class="app-container">
+    <div class="app-card">
+      <div class="app-card-personal-info">
+          <div class="app-card-photo">
+              <img src="../../../assets/images/art/selfie.jpg" alt="">
+          </div>
+          <div class="app-card-name">Vladislavs Andrejevs</div>
+          <div class="app-card-position">Full-stack Web Developer</div>
+      </div>
+      <div class="app-card-contact-info">
+          <div class="app-card-email">
+              <div class="icon-small">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-small-svg" viewBox="0 0 512 512"><title>Mail</title><rect x="48" y="96" width="416" height="320" rx="40" ry="40" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></rect><path stroke-linecap="round" stroke-linejoin="round" d="M112 160l144 112 144-112" class="ionicon-fill-none ionicon-stroke-width"></path></svg>
+              </div>
+              <div class="app-card-contact-container">
+                  <div class="app-card-email-title">Email</div>
+                  <div class="app-card-email-text">chewdisout@gmail.com</div>
+              </div>
+          </div>
+          <div class="app-card-phone">
+              <div class="icon-small">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-small-svg" viewBox="0 0 512 512"><title>Phone Portrait</title><rect x="128" y="16" width="256" height="480" rx="48" ry="48" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></rect><path d="M176 16h24a8 8 0 018 8h0a16 16 0 0016 16h64a16 16 0 0016-16h0a8 8 0 018-8h24" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></path></svg>
+              </div>
+              <div class="app-card-contact-container">
+                  <div class="app-card-phone-title">Phone</div>
+                  <div class="app-card-phone-text">+371-26094042</div>
+              </div>
+          </div>
+          <div class="app-card-address">
+              <div class="icon-small">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-small-svg" viewBox="0 0 512 512"><title>Location</title><path d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></path><circle cx="256" cy="192" r="48" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></circle></svg>
+              </div>
+              <div class="app-card-contact-container">
+                  <div class="app-card-address-title">Address</div>
+                  <div class="app-card-address-text">Vejinu iela 43</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="app-info">
+      <app-navbar></app-navbar>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

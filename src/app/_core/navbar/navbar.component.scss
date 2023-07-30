@@ -1,0 +1,49 @@
+.navbar {
+    display: none;
+    padding-top: 10px;
+    gap: 30px;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    height: 100vh;
+    background: #4200ff;
+    color: white;
+    z-index: 999;
+    transition: .4s;
+
+    svg {
+        fill: white;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5px;
+        align-items: center;
+        justify-content: flex-start;
+
+        &-text {
+            display: none;
+        }
+    }
+
+    &-language {
+        &-switcher {
+            position: absolute;
+            bottom: 10px;
+        }
+
+        &-icon {
+            display: none;
+        }
+    }
+
+    &:hover {
+        width: 100px;
+
+        .navbar-item-text {
+            display: flex;
+        }
+    }
+}
